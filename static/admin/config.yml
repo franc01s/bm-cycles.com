@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: franc01s/bm-cycles.com
+  branch: main
+
+media_folder: "static/img"
+public_folder: "/img"
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Draft", name: "draft", widget: "boolean" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Price", name: "price", widget: "string" }
+      - { label: "Model", name: "model", widget: "string" }
+      - { label: "Body", name: "body", widget: "text" }
+
+media_library:
+  name: uploadcare
+  config:
+    publicKey: "your-public-key"
