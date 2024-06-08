@@ -6,7 +6,7 @@
         <div class="bg-slate-100">
           <p class="text-2xl font-semibold">Vélos actuellement en vente</p>
         </div>
-        <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        <div class="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {{ range .Pages }}
             {{ partial "header/site-image.html" . }}
             {{ end }}
