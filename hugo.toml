@@ -1,5 +1,6 @@
 baseURL = "http://bm-cycles.com/"
 languageCode = "en-us"
-title = "BM Cycles"
+title = "BM Cycles Cudrefin"
 enableRobotsTXT = true
-
+[params]
+  Description = "BM Cycles est une entreprise spécialisée dans la réparation a Cudrefin"
